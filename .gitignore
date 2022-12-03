@@ -1,5 +1,5 @@
 
 *.zip
 examen/
-bin/obj/Debug/
+obj/Debug/
 .vscode/
