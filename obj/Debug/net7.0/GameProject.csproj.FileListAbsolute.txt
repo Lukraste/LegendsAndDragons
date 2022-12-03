@@ -1,0 +1,15 @@
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/obj/Debug/net7.0/GameProject.csproj.AssemblyReference.cache
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/obj/Debug/net7.0/GameProject.GeneratedMSBuildEditorConfig.editorconfig
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/obj/Debug/net7.0/GameProject.AssemblyInfoInputs.cache
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/obj/Debug/net7.0/GameProject.AssemblyInfo.cs
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/obj/Debug/net7.0/GameProject.csproj.CoreCompileInputs.cache
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/bin/Debug/net7.0/GameProject
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/bin/Debug/net7.0/GameProject.deps.json
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/bin/Debug/net7.0/GameProject.runtimeconfig.json
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/bin/Debug/net7.0/GameProject.dll
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/bin/Debug/net7.0/GameProject.pdb
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/obj/Debug/net7.0/GameProject.dll
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/obj/Debug/net7.0/refint/GameProject.dll
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/obj/Debug/net7.0/GameProject.pdb
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/obj/Debug/net7.0/GameProject.genruntimeconfig.cache
+/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/obj/Debug/net7.0/ref/GameProject.dll
