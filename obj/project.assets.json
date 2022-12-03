@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\gaelt\\.nuget\\packages\\": {}
+    "/home/sebastien/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gaelt\\OneDrive\\Documents\\Cours\\CSharp\\csharp-ecole\\RPG_Jeux\\GameProject\\GameProject.csproj",
+      "projectUniqueName": "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/GameProject.csproj",
       "projectName": "GameProject",
-      "projectPath": "C:\\Users\\gaelt\\OneDrive\\Documents\\Cours\\CSharp\\csharp-ecole\\RPG_Jeux\\GameProject\\GameProject.csproj",
-      "packagesPath": "C:\\Users\\gaelt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gaelt\\OneDrive\\Documents\\Cours\\CSharp\\csharp-ecole\\RPG_Jeux\\GameProject\\obj\\",
+      "projectPath": "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/GameProject.csproj",
+      "packagesPath": "/home/sebastien/.nuget/packages/",
+      "outputPath": "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gaelt\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/sebastien/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }
