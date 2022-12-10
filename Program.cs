@@ -1,2 +1,4 @@
-﻿Console.WriteLine("Legends and dragons");
+﻿
+
+Console.WriteLine("Legends and dragons");
 
