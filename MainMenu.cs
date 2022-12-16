@@ -1,7 +1,9 @@
-﻿using System;
+﻿using GameProject;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -17,7 +19,7 @@ namespace GameRpg
             {
                 Console.Clear();
                 WriteLogo();
-                Say("1", "New Game");
+                Say("1", "Nouvelle partie");
                 Say("2", "Save Game");
                 Say("3", "Load Game");
                 Say("4", "Exit Game");
@@ -25,24 +27,36 @@ namespace GameRpg
                 string option = input;
                 if (option == "1")
                 {
-                    //New Game
+                    //Nouvelle partie
+                    Console.Clear();
+                    ClearLogo();
+                    Console.WriteLine("Choisir Votre Profession");
+                    Say("1", "Knight");
+                    Say("2", "Mage");
+                    Say("3", "test");
+                    Say("4", "test2");
+
+                    SideMenu sideMenu = new SideMenu();
+                    //Console.WriteLine(sideMenu.Side);
+
                 }
                 else if(option == "2") 
                 {
-                    //Save Game
+                    //Sauvegarder
                 }
                 else if(option == "3") 
                 {
-                    //Load Game
+                    //Charger
                 }
                 else if(option == "4")
                 {
                     //Exit Game
-                    
+                    System.Environment.Exit(0);
+
                 }
                 else
                 {
-                    Console.WriteLine("Erreur, choisiser l'une des options possible");
+                    Console.WriteLine("Erreur, choisissez  l'une des options possible");
                     Thread.Sleep(1500);
                 }
             }
@@ -67,6 +81,11 @@ namespace GameRpg
              |___/                                                              |___/                           
 
             ";
+            Console.WriteLine(logo, Color.AliceBlue);
+        }
+        public static void ClearLogo()
+        {
+            string logo = @"";
             Console.WriteLine(logo, Color.AliceBlue);
         }
     }
