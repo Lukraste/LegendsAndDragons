@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/GameProject.csproj",
-      "projectName": "GameProject",
-      "projectPath": "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/GameProject.csproj",
+      "projectUniqueName": "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/LegendsAndDragon/LegendsAndDragons.csproj",
+      "projectName": "LegendsAndDragons",
+      "projectPath": "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/LegendsAndDragon/LegendsAndDragons.csproj",
       "packagesPath": "/home/sebastien/.nuget/packages/",
-      "outputPath": "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/GameProject/obj/",
+      "outputPath": "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/LegendsAndDragon/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/sebastien/.nuget/NuGet/NuGet.Config"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }

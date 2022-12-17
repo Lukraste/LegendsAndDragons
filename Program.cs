@@ -1,5 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Test");
+﻿using System;
 
-tessssssst 
+namespace LegendsAndDragons
+{
+    public class Play
+    {
+        static void Main(string[] args)
+        {
+            Knight knight = new Knight("Lancelot");         
+            Console.WriteLine(hero.Name);
+        }
+    }
+}
