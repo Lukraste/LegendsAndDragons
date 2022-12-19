@@ -4,19 +4,40 @@ namespace LegendsAndDragons
 {
     public abstract class Hero
     {
-        protected string Name {get;set;}
-        protected string Description {get;}
-        protected Dictionary<int, string> Inventory {get;set;}
-        protected Dictionary<int, string> Weapons {get;set;}
-        protected Dictionary<int, int> levels {get;set;}
-        protected int TotalXP {get;set;}
-        protected int Strength {get;set;}
-        protected int Agility {get;set;}
-        protected int Armor {get;set;}
-        protected int HitPoints {get;set;}
-        protected const int MaxHitPoints = 100;
-        protected int Lifes {get;set;}
-        protected int Intelligence {get;set;}
+        public string Name {get;set;}
+        public string Type {get;set;}
+        public string? Description {get;set;}
+        public Dictionary<int, string> Inventory {get;set;}
+        public Dictionary<int, string> Weapons {get;set;}
+        public Dictionary<int, int> Levels {get;set;}
+        public int? CurrentLevel {get;set;}
+        public int? TotalXP {get;set;}
+        public int? Strength {get;set;}
+        public int? Agility {get;set;}
+        public int? Armor {get;set;}
+        public int? HitPoints {get;set;}
+        public int? MaxHitPoints {get;set;}
+        public int? Lifes {get;set;}
+        public int? Intelligence {get;set;}
+
+        public Hero(string name){
+            Name = name;
+            Inventory = new Dictionary<int, string>();
+            Weapons = new Dictionary<int, string>();
+            Levels = new Dictionary<int, int>()
+            {
+                {1, 50},
+                {2, 100},
+                {3, 150},
+                {4, 200},
+                {5, 300},
+                {6, 400},
+                {7, 550},
+                {8, 700},
+                {9, 750},
+                {10, 1000},
+            };
+        }
 
         // Gestion des points de vie
 
@@ -25,21 +46,24 @@ namespace LegendsAndDragons
             if(HitPoints > MaxHitPoints){
                 HitPoints = MaxHitPoints;
             }
-            return Console.WriteLine($"{hitpoints} points de vie restauré(s)");
+            string result = $"{hitpoints} points de vie restauré(s)";
+            return result;
         }
         public string LoseHP(int hitpoints){
             HitPoints -= hitpoints;
             if(HitPoints <= 0){
                 Lifes -= 1 ;               
             }
-            if(checkLifes()){
-                return Console.WriteLine("--------> GAME OVER <--------");
+            if(CheckLifes()){
+                string result = $"--------> GAME OVER <--------";
+                return result;
             }
             else{
-                return Console.WriteLine($"Vous avez perdu {hitpoints} points de vie");
+                string result = $"Vous avez perdu {hitpoints} points de vie";
+                return result;
             }
         }
-        public bool CheckHP(){
+        public bool CheckLifes(){ShowStats
             if(Lifes == 0){
                 return true;
             }
@@ -48,21 +72,27 @@ namespace LegendsAndDragons
             }
         }
 
-        // Gestion du leveling et de l'experience
+        public void Attack(){
+            //
+        }
 
+        // Gestion du leveling et de l'experience
+        /*
         public string GainXP(int experience){
-            XP += experience;
-            if(checkXP()){
-                return Console.WriteLine($"Bravo !!! Level {level} atteint !");
+            TotalXP += experience;
+            if(CheckXP()){
+                string result = $"Bravo !!! Level {level} atteint !";
+                return result;
             }
             else {
-                return Console.WriteLine($"{experience} points d'expérience gagné(s)");
+                string result = $"{experience} Points d'expérience gagné(s)";
+                return result;
             }
         }
-        public bool checkXP(){
-            
+        public void CheckXP(){
+            return true;
         }
-
+        */
         // Gestion de l'inventaire et des armes
 
 
@@ -78,14 +108,18 @@ namespace LegendsAndDragons
             index++;
             Inventory.Add(index, item);
         }
+
+        // Affichage des données sur le Héro
+
         public string ShowWeapons()
         {
-            return Console.WriteLine($"Arme principale : {Weapons[0]} \n Arme secondaire : {Weapons[1]}");           
+            string result = $"Arme principale : {Weapons[0]} \n Arme secondaire : {Weapons[1]}";
+            return result;           
         }
 
-        public string ShowStats()
+        public void ShowStats()
         {
-            return Console.WriteLine($"Arme principale : {Weapons} \n Arme secondaire : {Weapons[1]}");           
+            Console.WriteLine($"Niveau actuel : {CurrentLevel}\nPoints d'expérience : {TotalXP}\nForce : {Strength}\nAgilité : {Agility}\nIntelligence : {Intelligence}\nPoints de vie restants : {HitPoints}\nArmure : {Armor}\nNombre de vies restantes : {Lifes}"); 
         }
     }
 }

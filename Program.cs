@@ -6,8 +6,9 @@ namespace LegendsAndDragons
     {
         static void Main(string[] args)
         {
-            Knight knight = new Knight("Lancelot");         
-            Console.WriteLine(hero.Name);
+            Knight hero = new Knight("Lancelot");
+            hero.LoseHP(20);
+            hero.ShowStats();    
         }
     }
 }
