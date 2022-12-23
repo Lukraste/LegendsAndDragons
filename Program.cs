@@ -12,19 +12,25 @@ using System.Threading.Tasks;
 
 namespace GameRpg
 {
-    class Game
+    class Program
     {
         static void Main(string[] args)
         {
             //**
             //MENU
             //*
-            Console.Title = "Legends and Dragons";
-            // Text
-            MainMenu.Menu();
-            MainMenu.WriteLogo();
-            Console.WriteLine("Bienvenue");
-            Console.ReadKey(true);
+            //Console.Title = "Legends and Dragons";
+            //// Text
+            //Menu.MainMenu();
+            //Menu.WriteLogo();
+            //Console.WriteLine("Bienvenue");
+            //Console.ReadKey(true);
+
+
+            Game myGame = new Game();
+            myGame.Start();
+
+
 
             //**
             //MAPPING
@@ -32,7 +38,6 @@ namespace GameRpg
             //Console.WriteLine("Legends and dragons");
             //Map map = new();
             //map.AfficheMap();
-
         }
     }
 }

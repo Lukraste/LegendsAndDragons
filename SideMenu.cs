@@ -5,15 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameProject
+namespace GameRpg
 {
     //Mettre en classe enfant de MainMenu
-    class SideMenu : MainMenu
-    {
-        public static void Side()
-        {
+    //class SideMenu : Menu
+    //{
+    //    public static void Side()
+    //    {
            
 
-        }
-    }
+    //    }
+    //}
 }
