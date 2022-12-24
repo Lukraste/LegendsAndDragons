@@ -4,7 +4,7 @@ using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Media;
 
 namespace GameRpg
 {
@@ -15,6 +15,8 @@ namespace GameRpg
 
             Console.Title = "Legends and dragons";
             RunMainMenu();
+            
+
 
 
         }
@@ -34,8 +36,12 @@ namespace GameRpg
 Bienvenu";
 
 
-
+            //Menu array
             string[] options = { "Nouvelle partie", "Inventaire","Quitter le jeux" };
+
+            //Sound/Musique BGM
+            SoundPlayer sound = new SoundPlayer(@"C:\Users\olivi\source\repos\GameProject\battle-of-the-dragons.wav");
+            sound.Play();
 
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
@@ -106,7 +112,6 @@ Bienvenu";
         }
         private void ExitGame()
         {
-            Console.WriteLine("\nPress any key to exit");
             Console.ReadKey(true);
             Environment.Exit(0);
         }
