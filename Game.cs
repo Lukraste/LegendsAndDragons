@@ -14,6 +14,11 @@ namespace GameRpg
         {
 
             Console.Title = "Legends and dragons";
+
+            //Sound/Musique BGM seulement supporter sur WINDOWS fait appel au fichier System.Windows.Extensions.dl
+            SoundPlayer sound = new SoundPlayer(@"C:\Users\olivi\source\repos\GameProject\battle-of-the-dragons.wav");
+            sound.Play();
+
             RunMainMenu();
             
 
@@ -39,9 +44,7 @@ Bienvenu";
             //Menu array
             string[] options = { "Nouvelle partie", "Inventaire","Quitter le jeux" };
 
-            //Sound/Musique BGM seulement supporter sur WINDOWS fait appel au fichier System.Windows.Extensions.dl
-            SoundPlayer sound = new SoundPlayer(@"C:\Users\olivi\source\repos\GameProject\battle-of-the-dragons.wav");
-            sound.Play();
+            
 
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
