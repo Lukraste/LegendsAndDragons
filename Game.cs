@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Media;
+using System.Runtime;
 
 namespace GameRpg
 {
@@ -15,10 +16,14 @@ namespace GameRpg
 
             Console.Title = "Legends and dragons";
 
-            //Sound/Musique BGM seulement supporter sur WINDOWS fait appel au fichier System.Windows.Extensions.dl
-            SoundPlayer sound = new SoundPlayer(@"C:\Users\olivi\source\repos\GameProject\battle-of-the-dragons.wav");
-            sound.Play();
-
+            // On vérifie l'OS puis on lance la music  avec windows puisque linux et mac ne fonctionne pas
+            if (OperatingSystem.IsWindows()) 
+            { 
+                //Sound/Musique BGM seulement supporter sur WINDOWS fait appel au fichier System.Windows.Extensions.dl
+                SoundPlayer sound = new SoundPlayer(@"C:\Users\olivi\source\repos\GameProject\battle-of-the-dragons.wav");
+                sound.PlayLooping();
+                //sound.Play();
+            }
             RunMainMenu();
             
 
