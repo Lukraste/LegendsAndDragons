@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
+using System.Security.AccessControl;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,11 +41,40 @@ namespace GameProject
         private List<int[]> sharpBackVillage = new List<int[]>();
         private List<int[]> buissonVillage = new List<int[]>();
         private List<int[]> fenetreVillage = new List<int[]>();
-
-
+        private int[] zoneForetNordLimitMin = { 1, 21 };
+        private int[] zoneForetNordLimitMax = { 7, 39 };
+        private int[] zonePlaineNordLimitMin = { 1, 41 };
+        private int[] zonePlaineNordLimitMax = { 7, 59 };
+        private int[] zoneMontagneNordLimitMin = { 1, 61 };
+        private int[] zoneMontagneNordLimitMax = { 7, 77 };
+        private int[] zoneCheminLimitMin = { 8, 1 };
+        private int[] zoneCheminLimitMax = { 12, 77 };
+        private int[] zoneLacLimitMin = { 13, 1 };
+        private int[] zoneLacLimitMax = { 20, 19 };
+        private int[] zoneMontagneSudLimitMin = { 13, 21 };
+        private int[] zoneMontagneSudLimitMax = { 20, 39 };
+        private int[] zonePlaineSudLimitMin = { 13, 41 };
+        private int[] zonePlaineSudLimitMax = { 20, 59 };
+        private int[] zoneForetSudLimitMin = { 13, 61 };
+        private int[] zoneForetSudLimitMax = { 20, 77 };
+        private List<Monstre> groupeMonstresForetMap;      //Zone 1 et 8: Foret maudite 
+        private List<Monstre> groupeMonstresPlaineMap;     //Zone 2 et 7: Plaine cachée
+        private List<Monstre> groupeMonstresMontagneMap;   //Zone 3 et 6: Montagne sacrée
+        private List<Monstre> groupeMonstresCheminMap;     //Zone 4 : Chemin du voyageur
+        private List<Monstre> groupeMonstresLacMap;        //Zone 5 : Lac enchantée
+        private Joueur joueurMap;
         private int height = 20;
-        public Map()
+
+
+        //Constructeur
+        public Map(List<Monstre> grpMonstresForet, List<Monstre> grpMonstresPlaine, List<Monstre> grpMonstresMontagne, List<Monstre> grpMonstresChemin, List<Monstre> grpMonstresLac, Joueur joueur)
         {
+            groupeMonstresForetMap = grpMonstresForet;
+            groupeMonstresPlaineMap = grpMonstresPlaine;
+            groupeMonstresMontagneMap = grpMonstresMontagne;
+            groupeMonstresCheminMap = grpMonstresChemin;
+            groupeMonstresLacMap = grpMonstresLac;
+            joueurMap = joueur;
             BuildTree();
             BuildMountain();
             BuildLac();
@@ -104,14 +135,75 @@ namespace GameProject
 
             // ajout Joueur sur map
 
-            AddElementMonde(9, 3, "P");
+            AddElementMonde(9, 3, joueurMap.Symbole);
 
             // ajout monstres sur map
 
-            AddElementMonde(8, 17, "*");
-            AddElementMonde(8, 22, "*");
-            AddElementMonde(7, 20, "*");
+            AddMonstreMonde(groupeMonstresForetMap, 1);
+            AddMonstreMonde(groupeMonstresPlaineMap, 2);
+            AddMonstreMonde(groupeMonstresMontagneMap, 3);
+            AddMonstreMonde(groupeMonstresCheminMap, 4);
+            AddMonstreMonde(groupeMonstresLacMap, 5);
+            AddMonstreMonde(groupeMonstresMontagneMap, 6);
+            AddMonstreMonde(groupeMonstresPlaineMap, 7);
+            AddMonstreMonde(groupeMonstresForetMap, 8);
         }
+
+        public void AddMonstreMonde(List<Monstre> groupeMonstres, int zone)
+        {
+            Random rnd = new Random();
+            int numCarte, pos;
+            for (int i = 0; i < groupeMonstres.Count; i++)
+            {
+                do
+                {
+                    switch (zone)
+                    {
+                        case 1:
+                            pos = rnd.Next(zoneForetNordLimitMin[1], zoneForetNordLimitMax[1] + 1);
+                            numCarte = rnd.Next(zoneForetNordLimitMin[0], zoneForetNordLimitMax[0] + 1);
+                            break;
+                        case 2:
+                            pos = rnd.Next(zonePlaineNordLimitMin[1], zonePlaineNordLimitMax[1] + 1);
+                            numCarte = rnd.Next(zonePlaineNordLimitMin[0], zonePlaineNordLimitMax[0] + 1);
+                            break;
+                        case 3:
+                            pos = rnd.Next(zoneMontagneNordLimitMin[1], zoneMontagneNordLimitMax[1] + 1);
+                            numCarte = rnd.Next(zoneMontagneNordLimitMin[0], zoneMontagneNordLimitMax[0] + 1);
+                            break;
+                        case 4:
+                            pos = rnd.Next(zoneCheminLimitMin[1], zoneCheminLimitMax[1] + 1);
+                            numCarte = rnd.Next(zoneCheminLimitMin[0], zoneCheminLimitMax[0] + 1);
+                            break;
+                        case 5:
+                            pos = rnd.Next(zoneLacLimitMin[1], zoneLacLimitMax[1] + 1);
+                            numCarte = rnd.Next(zoneLacLimitMin[0], zoneLacLimitMax[0] + 1);
+                            break;
+                        case 6:
+                            pos = rnd.Next(zoneMontagneSudLimitMin[1], zoneMontagneSudLimitMax[1] + 1);
+                            numCarte = rnd.Next(zoneMontagneSudLimitMin[0], zoneMontagneSudLimitMax[0] + 1);
+                            break;
+                        case 7:
+                            pos = rnd.Next(zonePlaineSudLimitMin[1], zonePlaineSudLimitMax[1] + 1);
+                            numCarte = rnd.Next(zonePlaineSudLimitMin[0], zonePlaineSudLimitMax[0] + 1);
+                            break;
+                        case 8:
+                            pos = rnd.Next(zoneForetSudLimitMin[1], zoneForetSudLimitMax[1] + 1);
+                            numCarte = rnd.Next(zoneForetSudLimitMin[0], zoneForetSudLimitMax[0] + 1);
+                            break;
+                        default:
+                            pos = rnd.Next(zoneCheminLimitMin[1], zoneCheminLimitMax[1] + 1);
+                            numCarte = rnd.Next(zoneCheminLimitMin[0], zoneCheminLimitMax[0] + 1);
+                            break;
+                    }
+                } while (monde.ElementAt(numCarte)[pos] != " ");
+                AddElementMonde(numCarte, pos, groupeMonstres[i].Symbole);
+            }
+        }
+
+
+
+
         public void AddElementDecorSurMap(List<int[]> ElementDecor, string c, int zone, int sud)
         {
             for (int i = 0; i < ElementDecor.Count; i++)
@@ -345,7 +437,7 @@ namespace GameProject
 
         public void AddCarteMonde(string c1, string c2, string c3)
         {
-            string[] carte = new string[80];
+            string[] carte = new string[79];
             int carteNum = monde.Count;
             string c4 = "│";
             if (carteNum == 0)
@@ -384,6 +476,7 @@ namespace GameProject
                 {
                     Console.Write(carte[i]);
                 }
+                Console.WriteLine();
             }
         }
 
