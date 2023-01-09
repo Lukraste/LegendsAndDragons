@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+
 namespace GameRpg
 {
     //Menu avec Flèches + Enter
@@ -55,7 +56,7 @@ namespace GameRpg
             }
             Console.ResetColor();
         }
-
+        //On execute ce que l'on a besoin a l'exterieur
         public int Run()
         {
             ConsoleKey keyPressed;
@@ -94,57 +95,7 @@ namespace GameRpg
 
         }
 
-        //Menu basic sans surlinage et selection en tapent un chiffre
-        public static void MainMenu()
-        {
-
-            for(; ; )
-            {
-                Console.Clear();
-                WriteLogo();
-                Say("1", "Nouvelle partie");
-                Say("2", "Save Game");
-                Say("3", "Load Game");
-                Say("4", "Exit Game");
-                string? input = Console.ReadLine();
-                string option = input;
-                if (option == "1")
-                {
-                    //Nouvelle partie
-                    Console.Clear();
-                    ClearLogo();
-                    Console.WriteLine("Choisir Votre Profession");
-                    Say("1", "Knight");
-                    Say("2", "Mage");
-                    Say("3", "test");
-                    Say("4", "test2");
-
-                    //SideMenu sideMenu = new SideMenu();
-
-                    //Console.WriteLine(sideMenu.Side);
-
-                }
-                else if(option == "2") 
-                {
-                    //Sauvegarder
-                }
-                else if(option == "3") 
-                {
-                    //Charger
-                }
-                else if(option == "4")
-                {
-                    //Exit Game
-                    System.Environment.Exit(0);
-
-                }
-                else
-                {
-                    Console.WriteLine("Erreur, choisissez  l'une des options possible");
-                    Thread.Sleep(1500);
-                }
-            }
-        }
+        
 
 
         public static void Say(string prefix, string message) 

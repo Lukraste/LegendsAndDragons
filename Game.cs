@@ -26,7 +26,7 @@ namespace GameRpg
             }
             RunMainMenu();
             
-
+            //TEST
 
 
         }
@@ -69,7 +69,6 @@ Bienvenu";
         }
         
         private void NewGame()
-
         {
             Console.Clear();
             string prompt = "Sélectionner votre personnage ?";
