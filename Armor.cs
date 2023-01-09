@@ -32,24 +32,29 @@ namespace ArmorPlayer
             Console.WriteLine("Faiblesse de l'armure : " + weakness );
 
         }
-
-
-
     }
-
-
-
 
     class Weapon
     {
-        private string name;
-        private string classe;
-        private string type;
-        private string description;
-        private int damage;
+        public string name;
+        public string classe;
+        public string type;
+        public string description;
+        public int damage;
+
+
+        public Weapon(string name, string classe, string type, string description, int damage)
+        {
+            this.name = name;
+            this.classe = classe;
+            this.type = type;
+            this.description = description;
+            this.damage = damage;
+        }
+
 
         // Valeurs par defaut des armes 
-        public Weapon()
+        public void BasicWeapon()
         {
             name = "HeadReaper";
             classe = "Foudre";
@@ -58,28 +63,16 @@ namespace ArmorPlayer
             damage = 10;
         }
 
-        public void createWeaponDictionary()
-        {
-            Dictionary<string,int> weaponList = new Dictionary<string, int>();
+         public void DisplayWeapon(){
+
+            Console.WriteLine("Nom de l'arme : " + name );
+            Console.WriteLine("Classe de l'arme : " + classe );
+            Console.WriteLine("Type de l'arme : " + type );
+            Console.WriteLine("Attaque : " + damage );
+            Console.WriteLine("Description : " + description );
+
         }
-
-        // Constructor of the Weapon class
-        public Weapon(string name, string classe,string type, string description, int damage)
-        {
-            this.name = name;
-            this.classe = classe; 
-            this.type = type;
-            this.description = description;
-            this.damage = damage;
-        } 
-
-
-        //print method weapon
-        public void printWeapon()
-        {
-            Console.WriteLine("{0}, {1}, {2},{3},{4}.", name, classe, type, description, damage);
-        }
-
+       
         
 
 
