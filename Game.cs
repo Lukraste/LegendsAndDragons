@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Media;
 using System.Runtime;
 
-namespace GameRpg
+namespace GameProject
 {
     class Game
     {
@@ -26,7 +26,7 @@ namespace GameRpg
             }
             RunMainMenu();
             
-            //TEST
+            
 
 
         }
@@ -106,9 +106,7 @@ Bienvenu";
             Console.WriteLine("\n Menu choisir perso + Lancer la game (map)");
             Console.ReadKey(true);
             RunMainMenu();
-
         }
-
         private void Inventory()
         {
             Console.Clear();

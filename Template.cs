@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -81,5 +82,32 @@ namespace GameProject
         //    }
         //}
 
+         //       public static void Say(string prefix, string message)
+         //       {
+         //           Console.Write("[");
+         //           Console.Write(prefix, Color.BlueViolet);
+         //           Console.WriteLine("]" + message);
+         //       }
+         //       public static void WriteLogo()
+         //       {
+         //           string logo = @"
+
+         // _                               _                        _        _                                 
+         //| |                             | |                      | |      | |                                
+         //| |     ___  __ _  ___ _ __   __| |___     __ _ _ __   __| |    __| |_ __ __ _  __ _  ___  _ __  ___ 
+         //| |    / _ \/ _` |/ _ \ '_ \ / _` / __|   / _` | '_ \ / _` |   / _` | '__/ _` |/ _` |/ _ \| '_ \/ __|
+         //| |___|  __/ (_| |  __/ | | | (_| \__ \  | (_| | | | | (_| |  | (_| | | | (_| | (_| | (_) | | | \__ \
+         //|______\___|\__, |\___|_| |_|\__,_|___/   \__,_|_| |_|\__,_|   \__,_|_|  \__,_|\__, |\___/|_| |_|___/
+         //             __/ |                                                              __/ |                
+         //            |___/                                                              |___/                           
+
+         //           ";
+         //           Console.WriteLine(logo, Color.AliceBlue);
+         //       }
+         //       public static void ClearLogo()
+         //       {
+         //           string logo = @"";
+         //           Console.WriteLine(logo, Color.AliceBlue);
+         //       }
     }
 }
