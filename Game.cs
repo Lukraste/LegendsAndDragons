@@ -13,7 +13,6 @@ namespace GameProject
     {
         public void Start()
         {
-
             Console.Title = "Legends and dragons";
 
             // On vérifie l'OS puis on lance la music  avec windows puisque linux et mac ne fonctionne pas

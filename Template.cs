@@ -13,17 +13,19 @@ namespace GameProject
     {
         //** Animation.cs
         //*
-        //Console.CursorVisible = false;
+        //Clignotement de string
+        //
+        //console.cursorvisible = false;
         //for (int i = 0; i < 5; i++)
         //{
-        //    Console.WriteLine("Hello");
-        //    Thread.Sleep(500);
-        //    Console.Clear();
-        //    Thread.Sleep(100);
+        //    console.writeline("hello");
+        //    thread.sleep(500);
+        //    console.clear();
+        //    thread.sleep(100);
 
         //}
-        //Console.WriteLine(text);
-        //Console.CursorVisible = true;
+        //console.writeline(text);
+        //console.cursorvisible = true;
 
 
 
@@ -82,32 +84,32 @@ namespace GameProject
         //    }
         //}
 
-         //       public static void Say(string prefix, string message)
-         //       {
-         //           Console.Write("[");
-         //           Console.Write(prefix, Color.BlueViolet);
-         //           Console.WriteLine("]" + message);
-         //       }
-         //       public static void WriteLogo()
-         //       {
-         //           string logo = @"
+        //       public static void Say(string prefix, string message)
+        //       {
+        //           Console.Write("[");
+        //           Console.Write(prefix, Color.BlueViolet);
+        //           Console.WriteLine("]" + message);
+        //       }
+        //       public static void WriteLogo()
+        //       {
+        //           string logo = @"
 
-         // _                               _                        _        _                                 
-         //| |                             | |                      | |      | |                                
-         //| |     ___  __ _  ___ _ __   __| |___     __ _ _ __   __| |    __| |_ __ __ _  __ _  ___  _ __  ___ 
-         //| |    / _ \/ _` |/ _ \ '_ \ / _` / __|   / _` | '_ \ / _` |   / _` | '__/ _` |/ _` |/ _ \| '_ \/ __|
-         //| |___|  __/ (_| |  __/ | | | (_| \__ \  | (_| | | | | (_| |  | (_| | | | (_| | (_| | (_) | | | \__ \
-         //|______\___|\__, |\___|_| |_|\__,_|___/   \__,_|_| |_|\__,_|   \__,_|_|  \__,_|\__, |\___/|_| |_|___/
-         //             __/ |                                                              __/ |                
-         //            |___/                                                              |___/                           
+        // _                               _                        _        _                                 
+        //| |                             | |                      | |      | |                                
+        //| |     ___  __ _  ___ _ __   __| |___     __ _ _ __   __| |    __| |_ __ __ _  __ _  ___  _ __  ___ 
+        //| |    / _ \/ _` |/ _ \ '_ \ / _` / __|   / _` | '_ \ / _` |   / _` | '__/ _` |/ _` |/ _ \| '_ \/ __|
+        //| |___|  __/ (_| |  __/ | | | (_| \__ \  | (_| | | | | (_| |  | (_| | | | (_| | (_| | (_) | | | \__ \
+        //|______\___|\__, |\___|_| |_|\__,_|___/   \__,_|_| |_|\__,_|   \__,_|_|  \__,_|\__, |\___/|_| |_|___/
+        //             __/ |                                                              __/ |                
+        //            |___/                                                              |___/                           
 
-         //           ";
-         //           Console.WriteLine(logo, Color.AliceBlue);
-         //       }
-         //       public static void ClearLogo()
-         //       {
-         //           string logo = @"";
-         //           Console.WriteLine(logo, Color.AliceBlue);
-         //       }
+        //           ";
+        //           Console.WriteLine(logo, Color.AliceBlue);
+        //       }
+        //       public static void ClearLogo()
+        //       {
+        //           string logo = @"";
+        //           Console.WriteLine(logo, Color.AliceBlue);
+        //       }
     }
 }
