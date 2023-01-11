@@ -24,10 +24,6 @@ namespace GameProject
                 //sound.Play();
             }
             RunMainMenu();
-            
-            
-
-
         }
         private void RunMainMenu()
         {
@@ -48,8 +44,6 @@ Bienvenu";
             //Menu array
             string[] options = { "Nouvelle partie", "Inventaire","Quitter le jeux" };
 
-            
-
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
             //Dependant l'index sélectionner on execute les méthodes
@@ -65,8 +59,7 @@ Bienvenu";
                     ExitGame();
                     break;
             }
-        }
-        
+        }   
         private void NewGame()
         {
             Console.Clear();
@@ -98,10 +91,7 @@ Bienvenu";
                 case 6:
                     Guardian();
                     break;
-
-
             }
-
             Console.WriteLine("\n Menu choisir perso + Lancer la game (map)");
             Console.ReadKey(true);
             RunMainMenu();
@@ -119,7 +109,6 @@ Bienvenu";
             Console.ReadKey(true);
             Environment.Exit(0);
         }
-
         private void Mage()
         {
 
@@ -148,7 +137,5 @@ Bienvenu";
         {
 
         }
-
-
     }
 }
