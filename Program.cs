@@ -1,4 +1,4 @@
-﻿//using Jeu_de_role_POO;
+﻿
 using GameProject;
 using System;
 using System.Collections.Generic;
@@ -73,7 +73,7 @@ namespace GameProject
             Game myGame = new Game();
             myGame.Start();
 
-            
+
 
 
 
@@ -82,6 +82,7 @@ namespace GameProject
             //MAPPING
             //**
             //Console.WriteLine("Legends and dragons");
+
             //Map map = new();
             //map.AfficheMap();
         }

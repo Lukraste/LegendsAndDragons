@@ -17,11 +17,11 @@ namespace GameProject
 
             // On vérifie l'OS puis on lance la music  avec windows puisque linux et mac ne fonctionne pas
             if (OperatingSystem.IsWindows()) 
-            { 
-                //Sound/Musique BGM seulement supporter sur WINDOWS fait appel au fichier System.Windows.Extensions.dl
-                SoundPlayer sound = new SoundPlayer(@"C:\Users\olivi\source\repos\GameProject\battle-of-the-dragons.wav");
+            {
+                //Sound/Musique BGM seulement supporter sur WINDOWS fait appel au fichier System.Windows.Extensions.dll
+                SoundPlayer sound = new SoundPlayer(@"C:\Users\olivi\source\repos\GameProject\sound\battledragons.wav");
                 sound.PlayLooping();
-                //sound.Play();
+
             }
             RunMainMenu();
         }
