@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/LegendsAndDragon/LegendsAndDragons.csproj": {}
+    "/home/sebastien/Desktop/LegendsAndDragons/LegendsAndDragons.csproj": {}
   },
   "projects": {
-    "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/LegendsAndDragon/LegendsAndDragons.csproj": {
+    "/home/sebastien/Desktop/LegendsAndDragons/LegendsAndDragons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/LegendsAndDragon/LegendsAndDragons.csproj",
+        "projectUniqueName": "/home/sebastien/Desktop/LegendsAndDragons/LegendsAndDragons.csproj",
         "projectName": "LegendsAndDragons",
-        "projectPath": "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/LegendsAndDragon/LegendsAndDragons.csproj",
+        "projectPath": "/home/sebastien/Desktop/LegendsAndDragons/LegendsAndDragons.csproj",
         "packagesPath": "/home/sebastien/.nuget/packages/",
-        "outputPath": "/home/sebastien/MEGA/IFOSUP/BAC 2/PrograObjet/LegendsAndDragon/obj/",
+        "outputPath": "/home/sebastien/Desktop/LegendsAndDragons/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/sebastien/.nuget/NuGet/NuGet.Config"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

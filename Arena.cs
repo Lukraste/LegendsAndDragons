@@ -14,7 +14,7 @@ namespace LegendsAndDragons
         {
             FirsToAtk  = rnd.Next(1, 2); 
         }
-
+        
     }
 }
 */

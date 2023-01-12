@@ -2,25 +2,21 @@ using System;
 
 namespace LegendsAndDragons
 {
-    public abstract class Hero
+    public abstract class Hero : Entity
     {
-        public string Name {get;set;}
-        public string Type {get;set;}
-        public string? Description {get;set;}
         public Dictionary<int, string> Inventory {get;set;}
         public Dictionary<int, string> Weapons {get;set;}
         public Dictionary<int, int> Levels {get;set;}
         public int? CurrentLevel {get;set;}
         public int? TotalXP {get;set;}
         public int? Strength {get;set;}
-        public int? Agility {get;set;}
-        public int? Armor {get;set;}
-        public int? HitPoints {get;set;}
-        public int? MaxHitPoints {get;set;}
-        public int? Lifes {get;set;}
         public int? Intelligence {get;set;}
-
-        public Hero(string name){
+        public int? Agility {get;set;}      
+        public int MaxHitPoints {get;set;}
+        public int? Lifes {get;set;}
+        
+        public Hero(string name) : base(name)
+        {
             Name = name;
             Inventory = new Dictionary<int, string>();
             Weapons = new Dictionary<int, string>();
@@ -49,12 +45,16 @@ namespace LegendsAndDragons
             string result = $"{hitpoints} points de vie restauré(s)";
             return result;
         }
-        public string LoseHP(int hitpoints){
+        public override void LoseHP(int hitpoints){
             HitPoints -= hitpoints;
             if(HitPoints <= 0){
                 Lifes -= 1 ;               
             }
-            if(CheckLifes()){
+            CheckLifes(hitpoints);
+        }
+        public string CheckLifes(int hitpoints)
+        {
+            if(Lifes == 0){
                 string result = $"--------> GAME OVER <--------";
                 return result;
             }
@@ -63,16 +63,9 @@ namespace LegendsAndDragons
                 return result;
             }
         }
-        public bool CheckLifes(){ShowStats
-            if(Lifes == 0){
-                return true;
-            }
-            else {
-                return false;
-            }
-        }
 
-        public void Attack(){
+        public void Attack()
+        {
             //
         }
 
@@ -111,16 +104,13 @@ namespace LegendsAndDragons
 
         // Affichage des données sur le Héro
 
+
         public string ShowWeapons()
         {
             string result = $"Arme principale : {Weapons[0]} \n Arme secondaire : {Weapons[1]}";
             return result;           
-        }
-
-        public void ShowStats()
-        {
-            Console.WriteLine($"Niveau actuel : {CurrentLevel}\nPoints d'expérience : {TotalXP}\nForce : {Strength}\nAgilité : {Agility}\nIntelligence : {Intelligence}\nPoints de vie restants : {HitPoints}\nArmure : {Armor}\nNombre de vies restantes : {Lifes}"); 
-        }
+        }            
+        public void ShowStats() => Console.WriteLine($"Niveau actuel : {CurrentLevel}\nPoints d'expérience : {TotalXP}\nForce : {Strength}\nAgilité : {Agility}\nIntelligence : {Intelligence}\nPoints de vie restants : {HitPoints}\nArmure : {Armor}\nNombre de vies restantes : {Lifes}"); 
     }
 }
     
