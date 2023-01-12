@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gaelt\\OneDrive\\Documents\\Cours\\CSharp\\csharp-ecole\\RPG_Jeux\\GameProject\\GameProject.csproj": {}
+    "C:\\Users\\FreeUser\\source\\repos\\GameProject\\GameProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gaelt\\OneDrive\\Documents\\Cours\\CSharp\\csharp-ecole\\RPG_Jeux\\GameProject\\GameProject.csproj": {
+    "C:\\Users\\FreeUser\\source\\repos\\GameProject\\GameProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gaelt\\OneDrive\\Documents\\Cours\\CSharp\\csharp-ecole\\RPG_Jeux\\GameProject\\GameProject.csproj",
+        "projectUniqueName": "C:\\Users\\FreeUser\\source\\repos\\GameProject\\GameProject.csproj",
         "projectName": "GameProject",
-        "projectPath": "C:\\Users\\gaelt\\OneDrive\\Documents\\Cours\\CSharp\\csharp-ecole\\RPG_Jeux\\GameProject\\GameProject.csproj",
-        "packagesPath": "C:\\Users\\gaelt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gaelt\\OneDrive\\Documents\\Cours\\CSharp\\csharp-ecole\\RPG_Jeux\\GameProject\\obj\\",
+        "projectPath": "C:\\Users\\FreeUser\\source\\repos\\GameProject\\GameProject.csproj",
+        "packagesPath": "C:\\Users\\FreeUser\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FreeUser\\source\\repos\\GameProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gaelt\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\FreeUser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
