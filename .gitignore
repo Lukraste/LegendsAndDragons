@@ -5,6 +5,7 @@
 
 GameProject.csproj
 
+
 # User-specific files
 *.rsuser
 *.suo
@@ -475,3 +476,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/GameProject.sln
