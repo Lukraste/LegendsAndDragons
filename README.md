@@ -1,16 +1,21 @@
 # Legends And Dragons
 
 1. Déplacement dans le menu
-* Flêches directionnelles
-* Touche Enter pour sélectionner 
-* 
-2. 
+* Flêches directionnelles.
+* Touche Enter pour sélectionner un élément.
+
+2. Déplacement sur la map
+* Flêches directionelles.
+* Lorsque le curseur du personnage frôle un monstre ( represnté par une *), un combat se lance.
+* Le reste des éléments sur la map sont des décors, on ne peut pas passer au travers.
+
+3. Déroulement d'un combat
+* Combat contre un monstre
+* Tour par tour, on peut choisir entre attaquer/se soigner/fuir
+* Quand on a plus de vie, c'est game over
 
 
-
-
-
-#### Idées pour les projet (BrainStorming)
+#### Premières idées pour le projet (BrainStorming)
 
 ## Menu
 ***
