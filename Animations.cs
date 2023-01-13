@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace GameProject
+namespace LegendsAndDragons
 {
     class Animations
     {
@@ -31,7 +31,6 @@ namespace GameProject
             {
                 Console.Write(text[i]);
                 Thread.Sleep(delay);
-
                 //Stop animation avec Enter
                 if (Console.KeyAvailable)
                 {
@@ -43,7 +42,6 @@ namespace GameProject
                 }
 
             }
-
         }
         //Apparation l'un sur l'autre du string pour créer une animation d'un emote ou un personnage
         public static void Frames(string[] frames, int nbTimes = 3, int delay = 100)
