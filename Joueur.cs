@@ -5,7 +5,7 @@ using System.Net.Security;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameProject
+namespace LegendsAndDragons
 {
     internal class Joueur : Personnage
     {
