@@ -17,13 +17,13 @@ class Program
         
         //Cette fonction permet de créer une liste d'armures
         // -------------------------------------------------
-        /*
-        var armures = new List<Armor>
+        
+        var armures = new List<BodyShield>
         {
-            new Armor("SansPeur", "Fire",30, "Water"),
-            new Armor("PurpleRain","Water",50, "Thunder"),
-            new Armor("Fareday", "Thunder", 40, "earth"),
-            new Armor( "GroudonTanker", "Earth", 80, "Fire"),
+            new BodyShield("SansPeur", "Fire",30, "Water"),
+            new BodyShield("PurpleRain","Water",50, "Thunder"),
+            new BodyShield("Fareday", "Thunder", 40, "earth"),
+            new BodyShield( "GroudonTanker", "Earth", 80, "Fire"),
         };
 
         armures = armures.OrderBy(p => p.name).ToList();
@@ -31,7 +31,7 @@ class Program
         {
             armure.DisplayArmor();
         }
-        */
+    
 
         // Cette fonction permet de créer une liste d'armes
         var armes = new List<Weapon>()
