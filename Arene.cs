@@ -144,6 +144,10 @@ namespace LegendsAndDragons
             if (Combattants[0].Vie <= 0) 
             {
                 Console.WriteLine("\n\tGAME OVER \n Vous n'avez malheureusement pas survécu!!");
+                Thread.Sleep(1800);
+                //Renvoi vers le menu principal
+                Game game = new Game();
+                game.RunMainMenu();
             }
             if (Combattants[1].Vie <= 0)
             {
