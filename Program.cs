@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using ArmorPlayer;
+using ArmoryPlayer;
 using ChestGame;
 namespace MyWeapons; // Note: actual namespace depends on the project name.
 
@@ -37,8 +37,8 @@ class Program
         var armes = new List<Weapon>()
         {
             new Weapon("Masse de Sauron","Guerrier","Earth","Arme de Sauron laissé derrire lui apres ca defaite ", 50),
-            new Weapon("excalibur","Guerrier", "Fire", "Il est pppur les couers vaillant", 30),
-            new Weapon("Baguette de Sareau","Sorcier","Water","Cette magie te rendra le plus puissant de ta categorie", 40),
+            new Weapon("excalibur","Guerrier", "knight", "Il est pur les couers vaillant", 30),
+            new Weapon("Baguette de Sareau","Mage","Water","Cette magie te rendra le plus puissant de ta categorie", 40),
             new Weapon("Le baiser de Diane","Archer", "Thunder", "Cette arc vous donnera la maitrise de Diane", 60) 
         };
 

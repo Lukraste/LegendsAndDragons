@@ -36,6 +36,7 @@
 ## creation des object(gaël)
 ***
 * coffre
+* creation d'un dictionnaire avec une armure ou une arme
 * artefact(Query artefact)
 *
 

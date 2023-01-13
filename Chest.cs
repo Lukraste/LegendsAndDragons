@@ -7,9 +7,15 @@ using System.Text;
 namespace ChestGame
 {
 
-    static class chest
+    class chest
     {
-        
+        public string Name { get; set; }
+        public Dictionary<int, string> Weapon { get; set;}
+       /* public chest(string name, Dictionary<int, string>)
+        {
+
+        }*/
+
     }
 
 
