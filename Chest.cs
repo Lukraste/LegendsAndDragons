@@ -4,7 +4,7 @@ using System.Text;
 
 // FormationCS.outils.DemanderNombreEntre
 
-namespace ChestGame
+namespace LegendAndDragons
 {
 
     class chest

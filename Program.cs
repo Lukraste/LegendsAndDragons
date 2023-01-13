@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using ArmoryPlayer;
-using ChestGame;
-namespace MyWeapons; // Note: actual namespace depends on the project name.
+using LegendAndDragons;
+
+namespace LegendAndDragons; // Note: actual namespace depends on the project name.
 
 
 class Program
@@ -17,7 +17,7 @@ class Program
         
         //Cette fonction permet de créer une liste d'armures
         // -------------------------------------------------
-
+        /*
         var armures = new List<Armor>
         {
             new Armor("SansPeur", "Fire",30, "Water"),
@@ -31,7 +31,7 @@ class Program
         {
             armure.DisplayArmor();
         }
-
+        */
 
         // Cette fonction permet de créer une liste d'armes
         var armes = new List<Weapon>()
