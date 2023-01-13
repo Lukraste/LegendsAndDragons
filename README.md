@@ -1,4 +1,17 @@
-# GameProject
+# Legends And Dragons
+
+1. Déplacement dans le menu
+* Flêches directionnelles
+* Touche Enter pour sélectionner 
+* 
+2. 
+
+
+
+
+
+#### Idées pour les projet (BrainStorming)
+
 ## Menu
 ***
 1. Nouvelle partie
