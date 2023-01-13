@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameProject
+namespace LegendsAndDragons
 {
     internal class Monstre :Personnage
     {
